@@ -25,4 +25,6 @@ button {
 
 textarea {
     margin: 10px;
+    min-width: 400px;
+    min-height: 60px;
 }

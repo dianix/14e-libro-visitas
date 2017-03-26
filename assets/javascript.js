@@ -1,3 +1,4 @@
+alert("Holaaaaaa ");
 // PRIMERO DECLARO DOS VARIABLES GLOBALES DONDE LLAMO A:
 
 // ÁREA DONDE SE ESCRIBE EL NUEVO COMENTARIO
@@ -14,12 +15,13 @@ function vistaPrevia(event) {
 
 // FUNCIONES PARA TAMAÑOS DE TEXTO
 function textoGrande(){
-    previo.style.fontSize = "22px";
+    previo.style.fontSize = "24px";
+    previo.style.fontWeight = "bold";
    
 }
 
 function textoMediano(){
-    previo.style.fontSize = "17px";
+    previo.style.fontSize = "18px";
 }
 
 function textoChico(){
@@ -57,15 +59,29 @@ function alinearDer(){
 // FUNCIÓN PARA ENVIAR A LA SECCIÓN DE PUBLICACIÓNES EL TEXTO
 function publicar(){
     
-    // variable donde se guarda el nuevo item
-    var comentario = document.getElementById("vistaPrevia");
-    var nuevaPublicacion = document.createElement("span");
-    nuevaPublicacion.innerHTML = comentario;
-   
-          
+    // variable donde llamo el comentario a publicar
+    var comentarioRecibido = document.getElementById("vistaPrevia");
+    // duplico el comentario
+    var comentarioPublicar = comentarioRecibido.cloneNode(true);
+    //console.log(copiaComent);
+    // le quito el id="vistaPrevia"
+    comentarioPublicar.removeAttribute("id");
+    console.log(comentarioPublicar);
+    
+    var publicaciones = document.getElementById("publicaciones");
+    publicaciones.insertBefore(comentarioPublicar, publicaciones.firstChild);
+    
     var nuevoSeparador = document.createElement("hr");
-     document.getElementById("publicaciones").appendChild(nuevoSeparador);
-    document.getElementById("publicaciones").appendChild(nuevaPublicacion);
-   
-    document.getElementById("vistaPrevia").value = "";
+    publicaciones.insertBefore(nuevoSeparador, publicaciones.firstChild);
+    
+    document.getElementById("comentarioNuevo").value ="";
+    comentarioRecibido.value = "";
+
 }
+
+// FUNCIÓN PARA BORRAR PUBLICACIÓN (en progreso)
+
+//function borrarComentario(){
+//   var publicaciones = document.getElementById("publicaciones");
+//    publicaciones.removeChild;
+//}
