@@ -1,5 +1,11 @@
- body {
+
+body {
      font-family: 'Fira Sans', sans-serif;
+    
+}
+
+img {
+    margin-left: 48%;
 }
 h1, h2 {
     text-align: center;

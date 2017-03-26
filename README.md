@@ -13,6 +13,6 @@
 2. Documento de javascript que contiene las funciones encargadas de:
    * Llamar el contenido del campo "comentarioNuevo" y enviarlo al párrafo "vistaPrevia" para realizar los ajustes deseados.
    * Aplicar los estilos de tamaño de texto, color y alineación de acuerdo a los botones correspondientes.
-   * Enviar el texto final a la sección de "publicaciones" (en progreso).
+   * Enviar el texto final a la sección de "publicaciones".
 
 3. Documento estilos.css para configurar el aspecto de algunos elementos de la página.

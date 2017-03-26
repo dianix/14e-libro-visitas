@@ -1,4 +1,4 @@
-alert("Holaaaaaa ");
+//alert("Holaaaaaa ");
 // PRIMERO DECLARO DOS VARIABLES GLOBALES DONDE LLAMO A:
 
 // ÁREA DONDE SE ESCRIBE EL NUEVO COMENTARIO
@@ -75,7 +75,12 @@ function publicar(){
     publicaciones.insertBefore(nuevoSeparador, publicaciones.firstChild);
     
     document.getElementById("comentarioNuevo").value ="";
+    
+    // NO FUNCIONAAA!!!! ヽ(#`Д´)ﾉ
     comentarioRecibido.value = "";
+    
+    // Este si funciona... ¬_¬
+    comentarioRecibido.removeAttribute("style");
 
 }
 
