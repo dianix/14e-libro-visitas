@@ -1,0 +1,28 @@
+ body {
+     font-family: 'Fira Sans', sans-serif;
+}
+h1, h2 {
+    text-align: center;
+}
+
+h1 {color: black;}
+h2 {color: grey;}
+h3 {color: dimgray;}
+
+button {
+    background-color: #87af00;
+    border-radius: 25px;
+    
+   
+    font-family: 'Fira Sans', sans-serif;
+    color: white;
+    font-size: 13px;
+    width: 150px;
+    height: 25px;
+    margin: 5px;
+    
+}
+
+textarea {
+    margin: 10px;
+}

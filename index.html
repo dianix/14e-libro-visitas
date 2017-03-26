@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Visitas</title>
+    <!-- ENLACE A DOCUMENTO CSS -->
+    <link rel="stylesheet" href="assets/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700,900" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Libro de visitas Laboratoria</h1>
+        <h2>¡Hola laboratoria!</h2>
+    </header>
+    
+    <hr>
+    <!-- SECCIÓN DONDE APARECERÁN LAS NUEVAS PUBLICACIONES -->
+    <section id="publicaciones">
+        <h3>Nuevas historias</h3>
+            <!-- COMENTARIOS MUESTRA -->
+            <hr>
+            <p>Este es un texto simulado para que no se vea vacío este párrafo.</p>
+            <hr>        
+            <p style="color: white; background: #7e0095; text-align: right">
+            Este es un copy paste del texto simulado anterior para que no se vea vacío este párrafo.
+            </p>
+    </section>
+    <hr>
+    <!-- SECCIÓN DONDE SE ESCRIBE Y DA FORMATO A LAS NUEVAS PUBLICACIONES -->
+    <section id="crearComentario">
+        <h3>Crear artículo</h3>
+        <form id="formato">
+            <!-- BOTONES DE TAMAÑO DE TEXTO -->
+            <button type="button" onclick="textoGrande()">Texto Grande</button>
+            <button type="button" onclick="textoMediano()">Texto Mediano</button>
+            <button type="button" onclick="textoChico()">Texto Chico</button>
+            <!-- BOTONES PARA COLOR DE FONDO Y TEXTO -->
+            <button type="button" onclick="colorTexto()">Color de Texto</button>
+            <button type="button" onclick="colorFondo()">Color de Fondo</button>
+            <!-- BOTONES PARA ALINEACIÓN DE TEXTO -->
+            <button type="button" onclick="alinearIzq()">Alinear Izquierda</button>
+            <button type="button" onclick="alinearCentro()">Alinear al Centro</button>
+            <button type="button" onclick="alinearDer()">Alinear Derecha</button><br>
+            <!-- ÁREA DONDE SE ESCRIBE EL TEXTO -->
+            <textarea id="comentarioNuevo" onkeypress="vistaPrevia(event)"></textarea>
+        </form>
+        <hr>
+        <!-- ÁREA DONDE APARECERÁ LA PREVISUALIZACIÓN DEL TEXTO CON LOS ESTILOS ELEGIDOS -->
+        <h3>Previsualización</h3>
+        <p id="vistaPrevia"> <!-- AQUÍ SE VERÁ EL TEXTO CONFORME SE VAYA ESCRIBIENDO -->
+          
+        </p><br>
+        <!-- BOTON PARA ENVIAR COMENTARIO TERMINADO A LA SECCIÓN DE NUEVAS PUBLICACIONES -->
+        <button type="button" onclick="publicar()">Publicar</button>
+        
+    </section> 
+    <!-- ENLACE A ARCHIVO DE JS -->
+    <script src="assets/javascript.js"></script> 
+</body>
+</html>
